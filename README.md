@@ -1,3 +1,7 @@
+This is a fork by [Samourai Wallet](https://samouraiwallet.com/), adding the logo in place of the "A" side of the dice.
+
+### Old README
+
 OpenSCAD script to generate a sixteen sided "spherical cap" style hexadecimal die. [Download the STL file](./sixteen-sided-hexidecimal-die.stl) to print.
 
 ![Photo of the printed hexadecimal die](./hexadecimal-dice-photo.jpg)
