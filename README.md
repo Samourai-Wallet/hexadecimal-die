@@ -11,9 +11,9 @@ Printed die and pic: H/T [@diogorsergio](https://twitter.com/diogorsergio/status
 
 ## Ensuring fairness of the dice
 
-Refere to the original [blog post](https://towardsdatascience.com/running-chi-square-tests-in-python-with-die-roll-data-b9903817c51b) for detatils.
+Refer to the original [blog post](https://towardsdatascience.com/running-chi-square-tests-in-python-with-die-roll-data-b9903817c51b) for detatils.
 
-In the table below three approaches to trow dices are recorded to be used then in the chi2-square independence test.
+In the table below three approaches to trow dices were recorded to be used then in the chi2-square independence test.
 
 Side|Group 1|Group 2|Group 3
 --- |  ---  |  ---  |  ---
@@ -43,7 +43,7 @@ dice = np.array([ [10,4,2,9,5,8,7,3,2,8,5,6,6,4,2,4], [12,2,4,5,2,9,7,4,9,7,9,2,
 
 Then numpy sums array lines and the script executes standard chi-square test assuming that expected distribution is equal to all 16 categories. 
 
-For instance dataset it was failed and the dice is not fair. You can proceed to [Original notice](# Original notice:)
+For instance dataset it was failed and the dice is not fair. You can proceed to [Original notice](## Original notice:)
 
 ## Watch-only wallet
 
