@@ -43,7 +43,7 @@ dice = np.array([ [10,4,2,9,5,8,7,3,2,8,5,6,6,4,2,4], [12,2,4,5,2,9,7,4,9,7,9,2,
 
 Then numpy sums array lines and the script executes standard chi-square test assuming that expected distribution is equal to all 16 categories. 
 
-For instance dataset it was failed and the dice is not fair. You can proceed to [Original notice](## Original notice:)
+The test failed for the instance dataset and the dice is not fair.
 
 ## Watch-only wallet
 
