@@ -9,42 +9,6 @@ Download the [STL file](./sixteen-sided-hexidecimal-die.stl) to print. This is a
 ![Photo of the printed hexadecimal die](./printed-die.jpg)
 Printed die and pic: H/T [@diogorsergio](https://twitter.com/diogorsergio/status/997898691091582977)
 
-## Ensuring fairness of the dice
-
-Refer to the original [blog post](https://towardsdatascience.com/running-chi-square-tests-in-python-with-die-roll-data-b9903817c51b) for detatils.
-
-In the table below three approaches to trow dices were recorded to be used then in the chi2-square independence test.
-
-Side|Group 1|Group 2|Group 3
---- |  ---  |  ---  |  ---
-0   |10	    |12	    |10
-1   |4	    |2	    |2
-2   |2	    |4	    |0
-3   |9	    |5	    |4
-4   |5	    |2	    |6
-5   |8	    |9	    |8
-6   |7	    |7	    |7
-7   |3	    |4	    |5
-8   |2	    |9	    |5
-9   |8	    |7	    |5
-A   |5	    |9	    |8
-B   |6	    |2	    |6
-C   |6	    |8	    |7
-D   |4	    |3	    |1
-E   |2	    |2	    |4
-F   |4	    |5	    |4
-Total|85    |90	    |82
-
-This dataset is used in first part of the calculation in the form of numpy array:
-
-```python
-dice = np.array([ [10,4,2,9,5,8,7,3,2,8,5,6,6,4,2,4], [12,2,4,5,2,9,7,4,9,7,9,2,8,3,2,5], [10,2,0,4,6,8,7,5,5,5,8,6,7,1,4,4]])
-```
-
-Then numpy sums array lines and the script executes standard chi-square test assuming that expected distribution is equal to all 16 categories. 
-
-The test failed for the instance dataset and the dice is not fair.
-
 ## Watch-only wallet
 
 ### From entropy to mnemonic
@@ -101,6 +65,7 @@ Thanks to [Chris McCormick](https://github.com/chr15m) for helping with this for
 
 ## Original notice:
 
-Hopefully useful for generating private keys and the like. Author gives no guarantee of any statistical properties of the randomness of this die. You probably want to use other sources of entropy in combination with this. What if the NSA have backdoored your 3d printer with an infill-biasing algorithm that causes your die to be weighted statistically in favour of certain values? Pwned.
+Hopefully useful for generating private keys and the like. Author gives no guarantee of any statistical properties of the randomness of this die. You probably want to use other sources of entropy in combination with this. You can ensure dice fairness by conducting chi-square test using [instructions](chi2test.md) and playing with your 3D printer setups, materials and etc.
 
 Based on a modified script from [Thingiverse by bwarne](http://www.thingiverse.com/thing:58408/#files).
+
