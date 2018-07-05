@@ -68,3 +68,7 @@ Thanks to [Chris McCormick](https://github.com/chr15m) for helping with this for
 Hopefully useful for generating private keys and the like. Author gives no guarantee of any statistical properties of the randomness of this die. You probably want to use other sources of entropy in combination with this. What if the NSA have backdoored your 3d printer with an infill-biasing algorithm that causes your die to be weighted statistically in favour of certain values? Pwned.
 
 Based on a modified script from [Thingiverse by bwarne](http://www.thingiverse.com/thing:58408/#files).
+
+## Chi-Square Test
+
+You can ensure dice fairness by conducting chi-square test using [instructions](chi2test.md) and playing with your 3D printer setups, materials and etc.
